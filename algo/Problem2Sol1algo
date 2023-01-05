@@ -1,0 +1,22 @@
+ALGORITHM OverlappingNumbers
+VAR
+    set1 , set2 : ARRAY_OF INTEGER[10];
+    i,j :INTEGER ;
+    sum: INTEGER :=0;
+BEGIN
+
+    Write("Enter first Array");
+    Read(set1);
+    Write("Enter second Array");
+    Read(set2);
+
+    FOR i FROM 0 TO set1.length STEP 1  DO
+        FOR j FROM 0 TO set2.length STEP 1  DO
+            IF (set1[i]=set2[j]) THEN
+                sum= set1[i]+set2[j];
+            END_IF
+        END_FOR
+    END_FOR
+
+    Write(sum)
+END
