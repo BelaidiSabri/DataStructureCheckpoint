@@ -12,7 +12,7 @@ BEGIN
     Write("Enter second Array");
     Read(set2);
 
-    set3: concat(set1, set3);
+    set3: concat(set1, set2);
     FOR i FROM 0 TO set3.length STEP 1  DO
         found := FALSE;
         FOR j FROM 0 TO set3.length STEP 1  DO
